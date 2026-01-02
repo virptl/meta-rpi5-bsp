@@ -1,13 +1,15 @@
 DESCRIPTION = "Minimal debug image for Raspberry Pi 5 BSP bring-up"
 LICENSE = "MIT"
 
-inherit image
+inherit core-image
 
 IMAGE_LINGUAS = " "
 
+# 'ssh-server-openssh' automatically installs openssh and configures it.
+IMAGE_FEATURES += "ssh-server-openssh debug-tweaks"
+
 IMAGE_INSTALL = " \
     packagegroup-core-boot \
-    dropbear \
     bash \
     ethtool \
     i2c-tools \
@@ -24,4 +26,3 @@ IMAGE_INSTALL:append = " \
 "
 
 IMAGE_FSTYPES += "wic"
-
