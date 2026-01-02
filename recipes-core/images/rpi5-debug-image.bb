@@ -24,6 +24,7 @@ IMAGE_INSTALL:append = " \
     wpa-supplicant \
     iw \
     custom-service \
+    watchdog \
 "
 
 IMAGE_FSTYPES += "wic"
