@@ -25,6 +25,8 @@ IMAGE_INSTALL:append = " \
     iw \
     custom-service \
     watchdog \
+    bluez5 \
+    bluez5-obex \
 "
 
 IMAGE_FSTYPES += "wic"
