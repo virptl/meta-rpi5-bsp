@@ -23,6 +23,7 @@ IMAGE_INSTALL:append = " \
     kernel-modules \
     wpa-supplicant \
     iw \
+    custom-service \
 "
 
 IMAGE_FSTYPES += "wic"
